@@ -1,0 +1,89 @@
+\documentclass[12pt]{amsart}
+
+\usepackage[margin=2cm,nohead]{geometry}
+\usepackage{multicol}
+\usepackage{xfrac}
+%
+\usepackage{amsmath, amssymb, mathrsfs, amsthm}
+
+
+\pagestyle{empty}
+
+
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+
+
+\newtheorem{problem}{Problem}
+\setcounter{problem}{3}
+
+\newcommand{\deriv}{\frac{d}{dx}}
+\newcommand{\bbn}{\mathbb N}
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\ran}[1]{\mathrm{ran}(#1)}
+\newcommand{\dom}[1]{\mathrm{dom}(#1)}
+
+
+\begin{document}
+
+\begin{center}
+\noindent{\large\textsc{Math 654 Homework \#1 (due on 9/9/2016)}}
+\end{center}
+
+
+\vspace{1em}
+
+\noindent \textbf{Your name:}\\
+
+
+\noindent\hrulefill
+
+\vspace{-1.5em}
+
+\noindent\hrulefill
+
+\vspace{1em}
+
+
+
+
+\begin{problem}
+Prove that every transitive set models extensionality.  Is every model of extensionality transitive?
+\end{problem}
+
+
+
+
+
+\begin{problem}
+If $\alpha$ is an ordinal, prove that $S(\alpha)$ is an ordinal, $\alpha < S(\alpha)$ and $(\forall \gamma \in ON)\big( \gamma < S(\alpha) \leftrightarrow \gamma \leq \alpha \big)$.  (Exercise I.8.11.)
+\end{problem}
+
+
+
+
+\begin{problem}
+Suppose $\alpha_0, \alpha_1, \ldots$ are ordinals and $\alpha_i < \alpha_{i+1}$ for all $i$.  Prove that $X = \bigcup \{ \alpha_i : i \in \omega \}$ is an ordinal, is the least upper bound of $\alpha_0, \alpha_1, \ldots$ and is a limit ordinal.
+\end{problem}
+
+
+
+
+\begin{definition}\ 
+\begin{enumerate}
+\item $2^{\omega}$ is the set of functions with domain $\omega$ and range $2 = \{ 0,1 \}$.  We often identify the members of $2^{\omega}$ with infinite sequences of 0's and 1's.  (This is called Cantor space.)
+\item $2^k$ is the set of functions with domain $k \in \omega$ and range $2 = \{ 0,1 \}$.  We often identify $2^k$ with the set of strings of 0's and 1's with length exactly $k$.
+\item $2^{<\omega} = \bigcup \big\{ 2^k : k \in \omega \big\}$.  We often identify $2^{<\omega}$ with the set of finite strings of 0's and 1's.
+\end{enumerate}
+\end{definition}
+
+\begin{problem}
+Prove that there is no well-ordering of $2^{\omega}$ which has type $\omega$.  Also, prove there is a well-ordering of $2^{<\omega}$ which has order type $\omega$.
+\end{problem}
+
+
+
+
+\end{document}
